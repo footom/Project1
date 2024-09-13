@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/ab">
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/shape"
+        android:text="歡迎使用\n樂活安全監測系統"
+        android:textColor="@color/red"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/pot" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="電話"
+        android:inputType="textEmailAddress"
+
+        android:minHeight="60dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/purple_200"
+        android:onClick="Login"
+        android:text="進入"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        tools:ignore="OnClick" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="本系統針對瓦斯及一氧化碳進行偵測。\n偵測標準瓦斯：180ppm，一氧化碳：150ppm，超過後會發出警訊提醒。"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="220dp"
+        android:layout_height="46dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90dp" />
+</LinearLayout>
